@@ -107,9 +107,13 @@ def style_ax(ax, title="", xlabel="", ylabel=""):
         ax.set_title(title, fontsize=12, fontweight="bold", color=TEXT, pad=12)
 
 # ── Load & prepare data ───────────────────────────────────────────────────────
+import os
+
 @st.cache_data
 def load_data():
-    df = pd.read_csv("all_data.csv")
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    csv_path = os.path.join(base_dir, "all_data.csv")
+    df = pd.read_csv(csv_path)
     month_mapping = {1:"Jan",2:"Feb",3:"Mar",4:"Apr",5:"May",6:"Jun",
                      7:"Jul",8:"Aug",9:"Sep",10:"Oct",11:"Nov",12:"Dec"}
     month_order  = list(month_mapping.values())
