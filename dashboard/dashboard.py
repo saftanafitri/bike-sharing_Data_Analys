@@ -74,7 +74,7 @@ def style_ax(ax, xlabel="", ylabel=""):
 # ── Load data — same path as original code ────────────────────────────────────
 @st.cache_data
 def load_data():
-    df = pd.read_csv("dashboard/all_data.csv")
+    df = pd.read_csv("all_data.csv")
 
     month_mapping = {1:"Jan",2:"Feb",3:"Mar",4:"Apr",5:"May",6:"Jun",
                      7:"Jul",8:"Aug",9:"Sep",10:"Oct",11:"Nov",12:"Dec"}
