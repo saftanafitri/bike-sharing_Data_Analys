@@ -1,6 +1,6 @@
 **Dashboard Penyewaan Sepeda**
 
-https://bikesharingsafta.streamlit.app/
+https://dashboardbikesharingsafta.streamlit.app/
 
 **Deskripsi Proyek**
 
